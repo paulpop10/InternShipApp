@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="200">
-    <device id="retina5_9" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="200">
+    <device id="retina3_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,57 +14,54 @@
         <scene sceneID="199">
             <objects>
                 <viewController storyboardIdentifier="TestViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="200" customClass="TestViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="197"/>
-                        <viewControllerLayoutGuide type="bottom" id="198"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="201">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <view key="view" contentMode="scaleToFill" id="13792">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8406" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="16" y="149" width="343" height="117"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0.32156862745098042" blue="0.21568627450980393" alpha="1"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <connections/>
-                                <state key="normal" title="😇"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13793">
+                                <rect key="frame" x="202.5" y="155" width="75" height="30"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <state key="normal" title="HelloWorld"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8407" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="16" y="286" width="343" height="117"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0.91764705882352937" blue="0.22745098039215686" alpha="1"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <state key="normal" title="😍"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8408" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="16" y="426" width="343" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0.15686274509803921" blue="0.15294117647058825" alpha="1"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <state key="normal" title="😸"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="11093" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="16" y="564" width="332" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.95294117647058818" green="1" blue="0.3843137254901961" alpha="1"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <state key="normal" title="🍪"/>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="welcome to auto layout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeB-Xd-4Q5">
+                                <rect key="frame" x="273" y="269.5" width="177" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhV-n3-GdD">
+                                <rect key="frame" x="186" y="30" width="108" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFV-Ll-JJp">
+                                <rect key="frame" x="30" y="269.5" width="23" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gys-ho-loh" firstAttribute="bottom" secondItem="CeB-Xd-4Q5" secondAttribute="bottom" constant="30" id="1JZ-IS-qfF"/>
+                            <constraint firstItem="Gys-ho-loh" firstAttribute="bottom" secondItem="HFV-Ll-JJp" secondAttribute="bottom" constant="30" id="2uu-Mf-m01"/>
+                            <constraint firstItem="13793" firstAttribute="centerY" secondItem="Gys-ho-loh" secondAttribute="centerY" id="EGW-xl-aMk"/>
+                            <constraint firstItem="13793" firstAttribute="centerX" secondItem="Gys-ho-loh" secondAttribute="centerX" id="OhZ-Ax-3HY"/>
+                            <constraint firstItem="VhV-n3-GdD" firstAttribute="centerX" secondItem="Gys-ho-loh" secondAttribute="centerX" id="ajb-HZ-Kmt"/>
+                            <constraint firstItem="VhV-n3-GdD" firstAttribute="top" secondItem="Gys-ho-loh" secondAttribute="top" constant="10" id="crp-36-gPy"/>
+                            <constraint firstItem="Gys-ho-loh" firstAttribute="trailing" secondItem="CeB-Xd-4Q5" secondAttribute="trailing" constant="30" id="nzt-1Z-pfy"/>
+                            <constraint firstItem="HFV-Ll-JJp" firstAttribute="leading" secondItem="Gys-ho-loh" secondAttribute="leading" constant="30" id="udd-36-0Em"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gys-ho-loh"/>
                     </view>
                     <connections>
-                        <outlet property="AngelButton" destination="8406" id="name-outlet-8406"/>
-                        <outlet property="LoveButton" destination="8407" id="name-outlet-8407"/>
-                        <outlet property="CatButton" destination="8408" id="name-outlet-8408"/>
-                        <outlet property="CookieButton" destination="11093" id="name-outlet-11093"/>
-                        <outlet property="background" destination="201" id="name-outlet-201"/>
+                        <outlet property="HelloWorld" destination="13793" id="name-outlet-13793"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="202" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="534" y="-13"/>
+            <point key="canvasLocation" x="531.884" y="-14.67391"/>
         </scene>
     </scenes>
 </document>

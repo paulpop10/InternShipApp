@@ -16,49 +16,13 @@ namespace HelloWorld
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton AngelButton { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIView background { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton CatButton { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton CookieButton { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton LoveButton { get; set; }
+        UIKit.UIButton HelloWorld { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (AngelButton != null) {
-                AngelButton.Dispose ();
-                AngelButton = null;
-            }
-
-            if (background != null) {
-                background.Dispose ();
-                background = null;
-            }
-
-            if (CatButton != null) {
-                CatButton.Dispose ();
-                CatButton = null;
-            }
-
-            if (CookieButton != null) {
-                CookieButton.Dispose ();
-                CookieButton = null;
-            }
-
-            if (LoveButton != null) {
-                LoveButton.Dispose ();
-                LoveButton = null;
+            if (HelloWorld != null) {
+                HelloWorld.Dispose ();
+                HelloWorld = null;
             }
         }
     }
