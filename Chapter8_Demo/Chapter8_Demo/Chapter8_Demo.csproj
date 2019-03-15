@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{62E9D637-9A3A-44DF-B6E6-24471182E000}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Chapter8_Demo</RootNamespace>
+    <AssemblyName>Chapter8_Demo</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>47238</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IOSDebuggerPort>10150</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\restaurant.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\restaurant.imageset\restaurant.jpg" />
+    <ImageAsset Include="Assets.xcassets\restaurant.imageset\restaurant%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\restaurant.imageset\restaurant%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Barrafina.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Barrafina.imageset\Barrafina.jpg" />
+    <ImageAsset Include="Assets.xcassets\Barrafina.imageset\Barrafina%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Barrafina.imageset\Barrafina%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Bourke Street Bakery.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Bourke Street Bakery.imageset\Bourke Street Bakery.jpg" />
+    <ImageAsset Include="Assets.xcassets\Bourke Street Bakery.imageset\Bourke Street Bakery%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Bourke Street Bakery.imageset\Bourke Street Bakery%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Cafe Deadend.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Cafe Deadend.imageset\Cafe Deadend.jpg" />
+    <ImageAsset Include="Assets.xcassets\Cafe Deadend.imageset\Cafe Deadend%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Cafe Deadend.imageset\Cafe Deadend%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Cafe Loisl.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Cafe Loisl.imageset\Cafe Loisl.jpg" />
+    <ImageAsset Include="Assets.xcassets\Cafe Loisl.imageset\Cafe Loisl%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Cafe Loisl.imageset\Cafe Loisl%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Cafe Lore.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Cafe Lore.imageset\Cafe Lore.jpg" />
+    <ImageAsset Include="Assets.xcassets\Cafe Lore.imageset\Cafe Lore%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Cafe Lore.imageset\Cafe Lore%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\CASK Pub and Kitchen.imageset\CASK Pub and Kitchen.jpg" />
+    <ImageAsset Include="Assets.xcassets\CASK Pub and Kitchen.imageset\CASK Pub and Kitchen%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\CASK Pub and Kitchen.imageset\CASK Pub and Kitchen%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\CASK Pub and Kitchen.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Confessional.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Confessional.imageset\Confessional.jpg" />
+    <ImageAsset Include="Assets.xcassets\Confessional.imageset\Confessional%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Confessional.imageset\Confessional%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Five Leaves.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Five Leaves.imageset\Five Leaves.jpg" />
+    <ImageAsset Include="Assets.xcassets\Five Leaves.imageset\Five Leaves%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Five Leaves.imageset\Five Leaves%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Haigh%27s Chocolate.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Haigh%27s Chocolate.imageset\Haigh%27s Chocolate.jpg" />
+    <ImageAsset Include="Assets.xcassets\Haigh%27s Chocolate.imageset\Haigh%27s Chocolate%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Haigh%27s Chocolate.imageset\Haigh%27s Chocolate%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Homei.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Homei.imageset\Homei.jpg" />
+    <ImageAsset Include="Assets.xcassets\Homei.imageset\Homei%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Homei.imageset\Homei%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Palomino Espresso.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Palomino Espresso.imageset\Palomino Espresso.jpg" />
+    <ImageAsset Include="Assets.xcassets\Palomino Espresso.imageset\Palomino Espresso%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Palomino Espresso.imageset\Palomino Espresso%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Po%27s Atelier.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Po%27s Atelier.imageset\Po%27s Atelier.jpg" />
+    <ImageAsset Include="Assets.xcassets\Po%27s Atelier.imageset\Po%27s Atelier%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Po%27s Atelier.imageset\Po%27s Atelier%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Royal Oak.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Royal Oak.imageset\Royal Oak.jpg" />
+    <ImageAsset Include="Assets.xcassets\Royal Oak.imageset\Royal Oak%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Royal Oak.imageset\Royal Oak%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Teakha.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Teakha.imageset\Teakha.jpg" />
+    <ImageAsset Include="Assets.xcassets\Teakha.imageset\Teakha%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Teakha.imageset\Teakha%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Traif.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Traif.imageset\Traif.jpg" />
+    <ImageAsset Include="Assets.xcassets\Traif.imageset\Traif%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Traif.imageset\Traif%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Upstate.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Upstate.imageset\Upstate.jpg" />
+    <ImageAsset Include="Assets.xcassets\Upstate.imageset\Upstate%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Upstate.imageset\Upstate%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Waffle &amp; Wolf.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Waffle &amp; Wolf.imageset\Waffle &amp; Wolf.jpg" />
+    <ImageAsset Include="Assets.xcassets\Waffle &amp; Wolf.imageset\Waffle &amp; Wolf%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Waffle &amp; Wolf.imageset\Waffle &amp; Wolf%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\For Kee Restaurant.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\For Kee Restaurant.imageset\For Kee Restaurant.jpg" />
+    <ImageAsset Include="Assets.xcassets\For Kee Restaurant.imageset\For Kee Restaurant%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\For Kee Restaurant.imageset\For Kee Restaurant%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Petite Oyster.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Petite Oyster.imageset\Petite Oyster.jpg" />
+    <ImageAsset Include="Assets.xcassets\Petite Oyster.imageset\Petite Oyster%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Petite Oyster.imageset\Petite Oyster%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Donostia.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Donostia.imageset\Donostia.jpg" />
+    <ImageAsset Include="Assets.xcassets\Donostia.imageset\Donostia%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Donostia.imageset\Donostia%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Graham Avenue Meats.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Graham Avenue Meats.imageset\Graham Avenue Meats And Deli.jpg" />
+    <ImageAsset Include="Assets.xcassets\Graham Avenue Meats.imageset\Graham Avenue Meats And Deli%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\Graham Avenue Meats.imageset\Graham Avenue Meats And Deli%403x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Assets.xcassets\restaurant.imageset\" />
+    <Folder Include="Assets.xcassets\Barrafina.imageset\" />
+    <Folder Include="Assets.xcassets\Bourke Street Bakery.imageset\" />
+    <Folder Include="Assets.xcassets\Cafe Deadend.imageset\" />
+    <Folder Include="Assets.xcassets\Cafe Loisl.imageset\" />
+    <Folder Include="Assets.xcassets\Cafe Lore.imageset\" />
+    <Folder Include="Assets.xcassets\CASK Pub and Kitchen.imageset\" />
+    <Folder Include="Assets.xcassets\Confessional.imageset\" />
+    <Folder Include="Assets.xcassets\Five Leaves.imageset\" />
+    <Folder Include="Assets.xcassets\Graham Avenue Meats and Deli.imageset\" />
+    <Folder Include="Assets.xcassets\Haigh%27s Chocolate.imageset\" />
+    <Folder Include="Assets.xcassets\Homei.imageset\" />
+    <Folder Include="Assets.xcassets\Palomino Espresso.imageset\" />
+    <Folder Include="Assets.xcassets\Po%27s Atelier.imageset\" />
+    <Folder Include="Assets.xcassets\Royal Oak.imageset\" />
+    <Folder Include="Assets.xcassets\Teakha.imageset\" />
+    <Folder Include="Assets.xcassets\Traif.imageset\" />
+    <Folder Include="Assets.xcassets\Upstate.imageset\" />
+    <Folder Include="Assets.xcassets\Waffle &amp; Wolf.imageset\" />
+    <Folder Include="Assets.xcassets\For Kee Restaurant.imageset\" />
+    <Folder Include="Assets.xcassets\Petite Oyster.imageset\" />
+    <Folder Include="Assets.xcassets\Donostia.imageset\" />
+    <Folder Include="Assets.xcassets\Graham Avenue Meats.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+    <None Include="Settings.StyleCop" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="ViewController.cs">
+      <ExcludeFromStyleCop>false</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+      <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="MyTableViewDataSource.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\StyleCop.MSBuild.4.7.49.0\build\StyleCop.MSBuild.Targets" Condition="Exists('..\packages\StyleCop.MSBuild.4.7.49.0\build\StyleCop.MSBuild.Targets')" />
+</Project>
